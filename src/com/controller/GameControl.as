@@ -17,7 +17,6 @@ package com.controller
 		{
 			var land:Land=new Land();
 			Global.root.addChild(land);
-			land.x=360;
 		}
 	}
 }
