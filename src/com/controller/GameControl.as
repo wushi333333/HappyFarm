@@ -1,6 +1,7 @@
 package com.controller
 {
-	import com.view.land.Land;
+	import com.view.gameview.GameView;
+	import com.view.gameview.land.Land;
 
 	public class GameControl
 	{
@@ -13,10 +14,10 @@ package com.controller
 			(this[func] as Function).apply(this,arr);
 		}
 		
-		private function showLand():void
+		private function showGameView():void
 		{
-			var land:Land=new Land();
-			Global.root.addChild(land);
+			var gameview:GameView=new GameView();
+			HappyFarm.instance.gameLayer.addChild(gameview);
 		}
 	}
 }
